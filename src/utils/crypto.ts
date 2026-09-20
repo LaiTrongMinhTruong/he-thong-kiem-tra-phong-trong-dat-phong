@@ -1,0 +1,12 @@
+/**
+ * Tiện ích băm mật khẩu bằng Web Crypto API (chuẩn SHA-256)
+ */
+
+export async function hashPassword(plainText: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(plainText);
+  const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  return hashHex;
+}

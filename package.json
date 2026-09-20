@@ -1,0 +1,23 @@
+{
+  "name": "he-thong-kiem-tra-phong-trong-dat-phong",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,VITE\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
+    "client": "vite",
+    "server": "json-server --watch db.json --port 3002",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "json-server": "^0.17.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.7"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "roomTypes": [
+    {
+      "id": "RT01",
+      "name": "Standard Double",
+      "capacity": 2,
+      "basePricePerNight": 500000,
+      "amenities": [
+        "Wifi miễn phí",
+        "Điều hòa hai chiều",
+        "Smart Tivi 43 inch",
+        "Nước suối miễn phí hàng ngày",
+        "Máy sấy tóc"
+      ],
+      "description": "Phòng tiêu chuẩn ấm cúng dành cho 2 người lớn, trang bị đầy đủ tiện nghi thiết yếu."
+    },
+    {
+      "id": "RT02",
+      "name": "Deluxe King",
+      "capacity": 3,
+      "basePricePerNight": 850000,
+      "amenities": [
+        "Wifi tốc độ cao",
+        "Ban công ngắm cảnh thành phố",
+        "Minibar & Trà/Cà phê",
+        "Bồn tắm nằm cao cấp",
+        "Bữa sáng tự chọn miễn phí"
+      ],
+      "description": "Phòng cao cấp với giường King rộng rãi, ban công thoáng mát và bồn tắm thư giãn."
+    },
+    {
+      "id": "RT03",
+      "name": "Family Suite",
+      "capacity": 5,
+      "basePricePerNight": 1500000,
+      "amenities": [
+        "2 Phòng ngủ riêng biệt",
+        "Phòng khách sang trọng",
+        "Khu vực bếp nhỏ tiện lợi",
+        "Smart TV 55 inch",
+        "Bữa sáng buffet cho cả gia đình",
+        "Két sắt an toàn"
+      ],
+      "description": "Căn hộ suite gia đình tiện nghi đầy đủ, không gian rộng rãi cho kỳ nghỉ gia đình hoặc nhóm bạn."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R101",
+      "roomNumber": "101",
+      "roomTypeId": "RT01",
+      "floor": 1,
+      "status": "available",
+      "note": "Gần cầu thang bộ, tiện di chuyển"
+    },
+    {
+      "id": "R102",
+      "roomNumber": "102",
+      "roomTypeId": "RT01",
+      "floor": 1,
+      "status": "available",
+      "note": "Phòng yên tĩnh cuối hành lang"
+    },
+    {
+      "id": "R103",
+      "roomNumber": "103",
+      "roomTypeId": "RT01",
+      "floor": 1,
+      "status": "maintenance",
+      "note": "Đang bảo dưỡng hệ thống điều hòa"
+    },
+    {
+      "id": "R201",
+      "roomNumber": "201",
+      "roomTypeId": "RT02",
+      "floor": 2,
+      "status": "available",
+      "note": "Hướng nhìn ra sân vườn xanh mát"
+    },
+    {
+      "id": "R202",
+      "roomNumber": "202",
+      "roomTypeId": "RT02",
+      "floor": 2,
+      "status": "cleaning",
+      "note": "Khách vừa trả phòng, nhân viên đang dọn dẹp"
+    },
+    {
+      "id": "R301",
+      "roomNumber": "301",
+      "roomTypeId": "RT03",
+      "floor": 3,
+      "status": "available",
+      "note": "Căn Suite VIP tầng cao view toàn cảnh"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "B001",
+      "bookingCode": "BKTEST01",
+      "customerName": "Nguyễn Văn An",
+      "customerPhone": "0912345678",
+      "customerEmail": "nguyenvanan@gmail.com",
+      "roomId": "R101",
+      "checkInDate": "2026-09-22",
+      "checkOutDate": "2026-09-25",
+      "adults": 2,
+      "children": 0,
+      "nights": 3,
+      "totalAmount": 1620000,
+      "status": "confirmed",
+      "note": "Khách yêu cầu nhận phòng yên tĩnh",
+      "createdAt": "2026-09-18T08:30:00.000Z",
+      "updatedAt": "2026-09-18T09:00:00.000Z"
+    },
+    {
+      "id": "B002",
+      "bookingCode": "BKREFU01",
+      "customerName": "Trần Thị Bình",
+      "customerPhone": "0987654321",
+      "customerEmail": "binhtran@gmail.com",
+      "roomId": "R201",
+      "checkInDate": "2026-09-30",
+      "checkOutDate": "2026-10-02",
+      "adults": 2,
+      "children": 1,
+      "nights": 2,
+      "totalAmount": 1836000,
+      "status": "confirmed",
+      "note": "Test chính sách hoàn tiền >= 7 ngày (hoàn 100%)",
+      "createdAt": "2026-09-19T10:00:00.000Z",
+      "updatedAt": "2026-09-20T02:22:46.185Z"
+    },
+    {
+      "id": "B003",
+      "bookingCode": "BKREFU02",
+      "customerName": "Lê Hoàng Cường",
+      "customerPhone": "0903123456",
+      "customerEmail": "cuongle@gmail.com",
+      "roomId": "R301",
+      "checkInDate": "2026-09-24",
+      "checkOutDate": "2026-09-27",
+      "adults": 4,
+      "children": 1,
+      "nights": 3,
+      "totalAmount": 4860000,
+      "status": "confirmed",
+      "note": "Test chính sách hoàn tiền 3-6 ngày (hoàn 50%)",
+      "createdAt": "2026-09-19T14:00:00.000Z",
+      "updatedAt": "2026-09-19T15:00:00.000Z"
+    },
+    {
+      "id": "B004",
+      "bookingCode": "BKREFU03",
+      "customerName": "Phạm Quốc Dũng",
+      "customerPhone": "0912999888",
+      "customerEmail": "dungpham@gmail.com",
+      "roomId": "R102",
+      "checkInDate": "2026-09-21",
+      "checkOutDate": "2026-09-23",
+      "adults": 2,
+      "children": 0,
+      "nights": 2,
+      "totalAmount": 1080000,
+      "status": "confirmed",
+      "note": "Test chính sách hoàn tiền < 3 ngày (hoàn 0%)",
+      "createdAt": "2026-09-19T16:00:00.000Z",
+      "updatedAt": "2026-09-19T16:15:00.000Z"
+    },
+    {
+      "id": "B_1789871035921",
+      "bookingCode": "BKKF6QFMDW",
+      "customerName": "Lai Trong Minh Truong",
+      "customerPhone": "0345564926",
+      "customerEmail": "mkhang189@gmail.com",
+      "roomId": "R201",
+      "checkInDate": "2026-09-21",
+      "checkOutDate": "2026-09-23",
+      "adults": 1,
+      "children": 0,
+      "nights": 2,
+      "totalAmount": 1836000,
+      "status": "pending",
+      "note": "",
+      "createdAt": "2026-09-20T02:23:55.921Z",
+      "updatedAt": "2026-09-20T02:23:55.921Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "P001",
+      "bookingId": "B001",
+      "amount": 1620000,
+      "method": "transfer",
+      "type": "full",
+      "status": "paid",
+      "paidAt": "2026-09-18T08:45:00.000Z",
+      "refundAmount": 0
+    },
+    {
+      "id": "P002",
+      "bookingId": "B002",
+      "amount": 550800,
+      "method": "card",
+      "type": "deposit",
+      "status": "paid",
+      "paidAt": "2026-09-19T10:05:00.000Z",
+      "refundAmount": 0
+    },
+    {
+      "id": "P003",
+      "bookingId": "B003",
+      "amount": 4860000,
+      "method": "transfer",
+      "type": "full",
+      "status": "paid",
+      "paidAt": "2026-09-19T14:30:00.000Z",
+      "refundAmount": 0
+    },
+    {
+      "id": "P004",
+      "bookingId": "B004",
+      "amount": 1080000,
+      "method": "card",
+      "type": "full",
+      "status": "paid",
+      "paidAt": "2026-09-19T16:05:00.000Z",
+      "refundAmount": 0
+    },
+    {
+      "id": "P_1789871035921_72p48",
+      "bookingId": "B_1789871035921",
+      "amount": 550800,
+      "method": "transfer",
+      "type": "deposit",
+      "status": "paid",
+      "refundAmount": 0,
+      "paidAt": "2026-09-20T02:24:11.236Z"
+    }
+  ],
+  "staff": [
+    {
+      "id": "ST01",
+      "username": "admin",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "fullName": "Quản Trị Viên Hệ Thống",
+      "status": "active"
+    },
+    {
+      "id": "ST02",
+      "username": "receptionist",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "fullName": "Lễ Tân Nguyễn Thị Mai",
+      "status": "active"
+    }
+  ],
+  "roomStatusHistory": [
+    {
+      "id": "RSH01",
+      "roomId": "R103",
+      "fromStatus": "available",
+      "toStatus": "maintenance",
+      "changedBy": "admin",
+      "changedAt": "2026-09-15T08:00:00.000Z",
+      "note": "Điều hòa rò rỉ gas, chuyển bảo dưỡng"
+    }
+  ],
+  "bookingHistory": [
+    {
+      "id": "BH01",
+      "bookingId": "B001",
+      "fromStatus": "pending",
+      "toStatus": "confirmed",
+      "changedBy": "receptionist",
+      "changedAt": "2026-09-18T09:00:00.000Z",
+      "note": "Xác nhận sau khi kiểm tra thanh toán qua ngân hàng"
+    },
+    {
+      "id": "BH02",
+      "bookingId": "B003",
+      "fromStatus": "pending",
+      "toStatus": "confirmed",
+      "changedBy": "receptionist",
+      "changedAt": "2026-09-19T15:00:00.000Z",
+      "note": "Đã nhận thanh toán đủ, xác nhận đặt phòng"
+    },
+    {
+      "id": "BH_1789870966210",
+      "bookingId": "B002",
+      "fromStatus": "pending",
+      "toStatus": "confirmed",
+      "changedBy": "admin",
+      "changedAt": "2026-09-20T02:22:46.210Z",
+      "note": "Nhân viên phê duyệt xác nhận đặt phòng."
+    },
+    {
+      "id": "BH_1789871035950",
+      "bookingId": "B_1789871035921",
+      "fromStatus": "none",
+      "toStatus": "pending",
+      "changedBy": "customer",
+      "changedAt": "2026-09-20T02:23:55.921Z",
+      "note": "Khách hàng đặt phòng qua website. Mã: BKKF6QFMDW"
+    }
+  ]
+}

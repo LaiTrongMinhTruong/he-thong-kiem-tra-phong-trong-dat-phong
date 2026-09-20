@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hệ Thống Đặt Phòng Khách Sạn | CNPM Bài 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-['Plus_Jakarta_Sans',sans-serif] min-h-screen flex flex-col">
+    <!-- Network Warning Banner -->
+    <div id="network-banner"></div>
+
+    <!-- Main Navigation Bar -->
+    <header id="app-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm"></header>
+
+    <!-- Main Application View -->
+    <main id="app" class="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"></main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 mt-12 text-center text-sm text-slate-500">
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="font-medium text-slate-700">Hệ Thống Kiểm Tra Phòng Trống & Đặt Phòng Khách Sạn</p>
+        <p class="mt-1 text-xs text-slate-400">Đồ án môn học Công nghệ Phần mềm &bull; Kiến trúc Boundary - Control - Entity (BCE)</p>
+      </div>
+    </footer>
+
+    <!-- Global Toast Container -->
+    <div id="toast-container" class="fixed top-5 right-5 z-50 flex flex-col space-y-3 pointer-events-none max-w-sm w-full"></div>
+
+    <!-- Global Modal Container -->
+    <div id="modal-container"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
